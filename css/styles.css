@@ -33,7 +33,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #0179D5; /* #bd5d38; */
+  --bs-primary: black; /* #bd5d38; */
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -41,7 +41,7 @@
   --bs-danger: #0179D5; /* #dc3545; */
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb:1, 121, 213; /* 189, 93, 56*/
+  --bs-primary-rgb:52,52,52; /* 189, 93, 56*/
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -56,7 +56,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: Muli, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-family: "Times New Roman", Muli, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --bs-body-font-size: 1.05rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -104,10 +104,11 @@ hr:not([size]) {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Times New Roman","Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
   color: #343a40;
+text-transform: capitalize;
 }
 
 h1, .h1 {
@@ -129,7 +130,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: calc(1.5rem );
 }
 @media (min-width: 1200px) {
   h3, .h3 {
@@ -579,7 +580,7 @@ progress {
 
 .initialism {
   font-size: 0.875em;
-  text-transform: uppercase;
+  ;
 }
 
 .blockquote {
@@ -4478,6 +4479,7 @@ textarea.form-control-lg {
 
 .navbar-dark .navbar-brand {
   color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
   color: #fff;
@@ -11302,7 +11304,12 @@ body {
     padding-left: 17rem;
   }
 }
-h1, .h1,
+h1, .h1{{
+  text-transform: uppercase;
+}
+    
+}
+
 h2,
 .h2,
 h3,
@@ -11313,7 +11320,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 h1, .h1 {
@@ -11326,7 +11333,7 @@ p.lead {
 }
 
 .subheading {
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Times New Roman", "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
   text-transform: upper;
   font-weight: 500;
   font-size: 1.5rem;
@@ -11365,7 +11372,7 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 13rem;
     max-height: 13rem;
-    border: 0.5rem solid rgba(210, 210, 255, 0.7);
+    border: 0.5rem solid rgba(255, 255, 255, 0.9);
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -11393,15 +11400,21 @@ p.lead {
   margin-bottom:0.5rem;
   height: 2rem;
   width: 2rem;
-  background-color: rgba(210, 210, 255, 0.9); <!-- -->
-  color: darkblue;
+  background-color: rgba(255, 255, 255, 0.9); <!-- -->
+  color: black;
   border-radius: 100%;
   font-size: 1rem;
-  margin-right: 2.5rem;
+
+    color: #343434
 }
-.social-icons .social-icon:last-child {
-  margin-right:0;
+
+
+/*
+ .social-icons .social-icon:last-child {
+  margin-right:4px;
 }
+*/
+
 .social-icons .social-icon:hover {
   background-color: white /*#bd5d38*/;
 }
@@ -11412,28 +11425,28 @@ p.lead {
 
 section.resume-section {
   display: flex;
-  align-items: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  align-items: top;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 0rem;
   max-width: 75rem;
 }
 section.resume-section .resume-section-content {
   width: 100%;
 }
-
+/*
 @media (min-width: 768px) {
   section.resume-section {
-    min-height: 100vh;
+    min-height: 100vh; */
   }
 }
 @media (min-width: 992px) {
   section.resume-section {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -11454,10 +11467,12 @@ section.resume-section .resume-section-content {
     
   }
 
-#btn-white {
-  color: white;
-  background-color: rgba(210, 210, 255, 0.4);
+.btn-white {
 
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
 }
 
 
@@ -11471,7 +11486,7 @@ section.resume-section .resume-section-content {
  #program-language {
     max-width: 1rem;
     max-height: 1rem;
-    border: 0.5rem solid rgba(210, 210, 255, 0.7);
+    border: 0.5rem solid rgba(52, 52, 52, 0.7);
   }
 
 .img-with-text {
@@ -11482,5 +11497,43 @@ section.resume-section .resume-section-content {
 .img-with-text img {
     display: block;
     margin: 0 auto;
+}
+
+.about {
+   
+    font-family: "Times New Roman", sans-serif;
+    color: black;
+    font-size: 20px;
+    
+    
+    
+}
+
+.shadow-card {
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+    flex-direction: row ;
+}
+
+
+.flex-container > div {
+  
+    margin-left: 15px;
+    margin-right: 15px 
+  text-align: center;
+    
+      display: inline-flex;
+
+
 }
 

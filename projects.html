@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shayan Talaei</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        
+              <!-- supplementary for fontawsome package -->
+        <link rel="stylesheet" href="./css/css/academicons.min.css"/>
+         
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+    <body id="page-top">
+        
+        <!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("navbar.html");
+});
+</script>
+<!--end of Navigation bar-->
+        
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            
+            
+
+            
+            <!--research internship-->
+            <section class="resume-section" id="internships">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Research Projects</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Research internship in Distributed and Federated Optimization </h3>
+                            
+                            <div class="subheading mb-3">
+                            <p><i class="fa-solid fa-location-dot"></i> Institute of Science and Technology Austria (IST Austria)</p>
+                            </div>
+                            <ol>
+                                <li class="mb-3">
+                                    <h4>Hybrid Decentralized Optimization</h4> Throughout this research project, we have studied the setup where nodes with first- and zeroth-order capabilities are jointly leveraged in an optimization task. For this, I implemented a decentralized optimization simulator as well as several gradient estimators from scratch using Pytorch. Moreover, I developed a new analytic technique to bound the biasedness of zeroth-order nodes to prove a linear convergence rate. A preprint of this work, including all the experiments and proofs for the convex case, is available on arxiv, and it's to be submitted to ICML'23.</li>
+                                
+                                <li class="mb-3">
+                                    <h4>Quantized Asynchronous Federated Learning (QuAFL)</h4> In this project, we designed a new variant of the classic FedAvg algorithm to relax the necessities for both tight synchronization and high communication costs between the server and clients. Our algorithm departs from the prior works in the literature by relaxing the need for bounded gradient norm assumption, which makes it more applicable in real-world scenarios. For this, I implemented a time-based simulator for running federated learning algorithms from scratch. I then conducted a series of ablation studies on the hyperparameters space to compare QuAFL, FedAvg, and FedBuff algorithms, over a set of the tasks and datasets presented in LEAF, a framework for benchmarking federated learning algorithms.</li>
+                                
+                                <li class="mb-3">
+                                    <h4>Improving the lower bounds on solo executions of randomized leader election algorithms</h4> There are many deterministic and randomized algorithms for solving the shared-memory leader election problem under bounded write contention. The worst-case solo-step complexity of the deterministic algorithms has been bounded logarithmically in the number of nodes. In this project, we aimed to bound the same measure for the randomized algorithms. We finally showed that the analysis of these randomized algorithms could be reduced to the deterministic cases, and they could be bounded similarly.</li>
+                                
+                                
+                            </ol>
+                        
+                        </div>
+                        </div>
+                        <div class="flex-grow-1">
+                            
+                            
+                            
+                            <h3 class="mb-0">Research internship in Machine Learning Theory</h3>
+                            
+                            <div class="subheading mb-3">
+                            <p><i class="fa-solid fa-location-dot"></i> Swiss Federal Institute of Technology in Lausanne (EPFL Switzerland)</p>
+                            </div>
+                            <ol start="4">
+                                <li class="mb-3">
+                                    <h4>Reasoning happens in bottlenecks</h4> In this project, we aimed to first, define a criterion to decide whether a neural network is doing reasoning or memorization and second, encourage it to do reasoning by adding an inductive bias to its architecture. For this, I designed a bipartite neural network with a Softsign activation layer in between and trained it over a set of tasks simultaneously, having switched the second part for each task. By adjusting the bottleneck size, the model had less room for memorization and was forced to pass the minimal information from the first part needed to solve the tasks. This result shows that by training a network over a set of contrastive tasks, we can encourage the model to avoid memorization and shortcut solutions. </li>
+                                
+                                <li class="mb-3">
+                                    <h4>Evolving Kernels (EvoKe)</h4> We designed a new class of learning algorithms that iterate convex programs by fitting kernels whose features evolve at each iteration. This enables a hierarchal learning method that combines lower complexity features to investigate the feature space while maintaining the interpretability of kernel methods. Throughout this project, I have implemented four different iterative learning algorithms, namely for learning boolean functions, sparse directional-polynomial representations, and finally, EvoKe. The result of this work is to be submitted to COLT'23. </li>
+                                
+
+                                
+                                
+                            </ol>
+                        
+                        
+                       
+                       </div>
+                       </div>
+            <hr class="m-0" />
+            </section>
+            
+            
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
